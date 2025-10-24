@@ -47,7 +47,7 @@ fun ActivitasPertama(modifier: Modifier){
         Spacer(modifier = Modifier.height(height = 25.dp))
         Card (
             modifier = Modifier
-                .fillMaxSize(fraction = 1f)
+                .fillMaxWidth(fraction = 1f)
                 .padding(all = 12.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
@@ -56,7 +56,7 @@ fun ActivitasPertama(modifier: Modifier){
         ){
             Row()
             {
-                val gambar = painterResource(id= R.drawable.Veliona)
+                val gambar = painterResource(id= R.drawable.veliona)
                 Image(
                     painter = gambar,
                     contentDescription = null,
