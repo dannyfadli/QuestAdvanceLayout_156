@@ -25,6 +25,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.questadvancelayout_156.R
+import androidx.compose.foundation.Image
 
 @Composable
 fun ActivitasPertama(modifier: Modifier){
@@ -57,12 +58,13 @@ fun ActivitasPertama(modifier: Modifier){
             {
                 val gambar = painterResource(id= R.drawable.Veliona)
                 Image(
-                    Painter = gambar,
-                    contenDescrption = null,
+                    painter = gambar,
+                    contentDescription = null,
                     modifier = Modifier
-                        .size(size = 75.dp)
-                        .padding(all = 100.dp)
+                        .size(100.dp)
+                        .padding(5.dp)
                 )
+
                 Spacer(modifier = Modifier.width(width = 25.dp))
                 Column(){
                     Text(
@@ -85,6 +87,13 @@ fun ActivitasPertama(modifier: Modifier){
         Box(
             modifier = Modifier
                 .fillMaxSize()
-        )
+        ){
+            Text(
+                stringResource(R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+        }
     }
 }
