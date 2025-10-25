@@ -26,6 +26,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.questadvancelayout_156.R
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.ui.draw.clip
 
 @Composable
 fun ActivitasPertama(modifier: Modifier){
@@ -62,7 +64,9 @@ fun ActivitasPertama(modifier: Modifier){
                     contentDescription = null,
                     modifier = Modifier
                         .size(100.dp)
+                        .clip(CircleShape)
                         .padding(5.dp)
+
                 )
 
                 Spacer(modifier = Modifier.width(width = 25.dp))
